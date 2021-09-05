@@ -15,6 +15,7 @@ copyright: Copyright &copy; 2021 Dup4
 # Configuration
 theme:
   name: material
+  custom_dir: theme
 
   # Don't include MkDocs' JavaScript
   include_search_page: false
@@ -80,6 +81,11 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/Dup4/mkdocs-material-template
 
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
+  - assets/mathjax.js
+
 # Extensions
 markdown_extensions:
   - admonition
@@ -121,4 +127,6 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Home: index.md
+  - Home: 
+    - Getting Started: index.md
+    - MathJax: mathjax.md
