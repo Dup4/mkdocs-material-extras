@@ -5,7 +5,7 @@ site_description: >-
   Mkdocs Material Template
 
 # Repository
-repo_name: Dup4/mkdocs-material-template
+repo_name: mkdocs-material-template
 repo_url: https://github.com/Dup4/mkdocs-material-template
 edit_uri: ""
 
@@ -129,4 +129,5 @@ markdown_extensions:
 nav:
   - Home: 
     - Getting Started: index.md
-    - MathJax: mathjax.md
+  - Guide:
+    - 数学公式: guide/mathjax.md
