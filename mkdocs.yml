@@ -25,34 +25,38 @@ theme:
   language: zh
 
   features:
-    - content.code.annotate
-    - content.tabs.link
     - header.autohide
-    - navigation.expand
-    - navigation.indexes
-    - navigation.instant
-    - navigation.sections
+    # - navigation.expand
+    # - navigation.instant
+    # - navigation.sections
     - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.top
-    - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
     - toc.integrate
 
+    # insiders only
+    # - content.code.annotate
+    # - content.tabs.link
+    # - navigation.indexes
+    # - navigation.tabs.sticky
+    # - navigation.tracking
+
   palette:
-    - scheme: default
-      primary: indigo
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: light blue
       accent: indigo
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/weather-sunny
         name: Switch to dark mode
-    - scheme: slate
-      primary: red
-      accent: red
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: cyan
       toggle:
-        icon: material/toggle-switch
+        icon: material/weather-night
         name: Switch to light mode
 
   font:
@@ -60,14 +64,13 @@ theme:
     code: Roboto Mono
 
   icon:
-    repo: fontawesome/brands/github
+    repo: fontawesome/brands/git-alt
     logo: material/library
-
-docs_dir: docs
 
 # Plugins
 plugins:
-  - search
+  - search:
+      lang: ja
   - git-revision-date-localized
   - minify:
       minify_html: true
@@ -111,8 +114,8 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.magiclink:
       repo_url_shorthand: true
-      user: squidfunk
-      repo: mkdocs-material
+      user: Dup4
+      repo: mkdocs-material-template
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences:
@@ -124,6 +127,8 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+
+docs_dir: docs
 
 # Page tree
 nav:
