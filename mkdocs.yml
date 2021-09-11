@@ -94,9 +94,6 @@ extra_javascript:
 
 # Extensions
 markdown_extensions:
-  - markdown.extensions.smarty:
-      smart_quotes: false
-  - markdown.extensions.tables:
   - admonition:
   - abbr:
   - attr_list:
@@ -104,6 +101,9 @@ markdown_extensions:
   - footnotes:
   - md_in_html:
   - meta:
+  - markdown.extensions.smarty:
+      smart_quotes: false
+  - markdown.extensions.tables:
   - markdown.extensions.toc:
       slugify: !!python/name:pymdownx.slugs.uslugify
       permalink: true
