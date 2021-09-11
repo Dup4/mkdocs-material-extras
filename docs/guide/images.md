@@ -1,4 +1,4 @@
-# 图片
+# Images | 图片
 
 ===! "效果"
 	![](./images/ZoomOut_ZH-CN4471982075_1920x1080.jpeg)
