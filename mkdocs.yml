@@ -10,7 +10,7 @@ repo_url: https://github.com/Dup4/mkdocs-material-template
 edit_uri: ""
 
 # Copyright
-copyright: Copyright &copy; 2021 Dup4
+copyright: Copyright &copy; 2021 <a href="https://github.com/Dup4" target="_blank" rel="noopener">Dup4</a>
 
 # Configuration
 theme:
@@ -45,8 +45,8 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: light blue
-      accent: indigo
+      primary: deep purple
+      accent: deep purple
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
@@ -97,7 +97,8 @@ markdown_extensions:
   - footnotes
   - meta
   - md_in_html
-  - toc:
+  - markdown.extensions.toc:
+      slugify: !!python/name:pymdownx.slugs.uslugify
       permalink: true
   - pymdownx.arithmatex:
       generic: true
@@ -110,11 +111,16 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.highlight
   - pymdownx.inlinehilite
-  - pymdownx.keys
+  - pymdownx.keys:
+      separator: "\uff0b"
   - pymdownx.magiclink:
+      repo_url_shortener: true
       repo_url_shorthand: true
+      social_url_shorthand: true
+      social_url_shortener: true
       user: Dup4
       repo: mkdocs-material-template
+      normalize_issue_symbols: true
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences:

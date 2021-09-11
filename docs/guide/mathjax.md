@@ -6,7 +6,7 @@
 	$e^x$
 
 === "源码"
-	```markdown
+	```latex
 	$e^x$
 	```
 
@@ -18,7 +18,7 @@
 	$$
 
 === "源码"
-	```markdown
+	```latex
 	$$
 	e^x
 	$$
@@ -32,7 +32,7 @@
 	$$
 
 === "源码"
-	```markdown
+	```latex
 	$$
 	\begin{Vmatrix}1&2\\3&4\\ \end{Vmatrix}
 	$$
@@ -44,7 +44,7 @@
 	$$
 
 === "源码"
-	```markdown
+	```latex
 	$$
 	\begin{Bmatrix}1&2\\3&4\\ \end{Bmatrix}
 	$$
@@ -61,7 +61,7 @@
 	$$
 
 === "源码"
-	```markdown
+	```latex
 	$$
 	\left[
 	\begin{array}{cc|c}
@@ -86,7 +86,7 @@
 	$$
 
 === "源码"
-	```markdown
+	```latex
 	$$
 	\begin{align}
 	\sqrt{37} & = \sqrt{\frac{73^2-1}{12^2}} \\
@@ -107,7 +107,7 @@
 	$$
 
 === "源码"
-	```markdown
+	```latex
 	$$
 	\begin{align}
 	f(x)&=\left(x^3\right)+\left(x^3+x^2+x^1\right)+\left(x^3+x^‌​2\right)\\
@@ -128,7 +128,7 @@
 	$$
 
 === "源码"
-	```markdown
+	```latex
 	$$
 	f(n) =
 	\begin{cases}
@@ -150,7 +150,7 @@
 	$$
 
 === "源码"
-	```markdown
+	```latex
 	$$
 	\left.
 	\begin{array}{l}
@@ -176,7 +176,7 @@
 	$$
 
 === "源码"
-	```markdown
+	```latex
 	$$
 	\begin{array}{c|lcr}
 	n & \text{Left} & \text{Center} & \text{Right} \\
@@ -228,7 +228,7 @@
 	$$
 
 === "源码"
-	```markdown
+	```latex
 	$$
 	% outer vertical array of arrays
 	\begin{array}{c}
@@ -282,7 +282,7 @@
 	$$
 
 === "源码"
-	```markdown
+	```latex
 	$$
 	\left\{ 
 	\begin{array}{c}
@@ -304,7 +304,7 @@
 	$$
 
 === "源码"
-	```markdown
+	```latex
 	$$
 	\begin{cases}
 	a_1x+b_1y+c_1z=d_1 \\ 
@@ -326,7 +326,7 @@
 	$$
 
 === "源码"
-	```markdown
+	```latex
 	$$
 	\left\{
 	\begin{aligned} 
@@ -366,7 +366,7 @@
 	$$
 
 === "源码"
-	```markdown
+	```latex
 	$$
 	\begin{array}{|rc|}
 	\hline
@@ -400,7 +400,7 @@
 	$$
 
 === "源码"
-	```markdown
+	```latex
 	$$
 	\mathbf{ABCDEFGHIJKLMNOPQRSTUVWXYZ}
 	$$
@@ -412,7 +412,7 @@
 	$$
 
 === "源码"
-	```markdown
+	```latex
 	$$
 	\pmb{ABCDEFGHIJKLMNOPQRSTUVWXYZ,abcdefghijklmnopqrstuvwxyz}
 	$$
@@ -424,7 +424,7 @@
 	$$
 
 === "源码"
-	```markdown
+	```latex
 	$$
 	\mathcal{ABCDEFGHIJKLMNOPQRSTUVWXYZ,abcdefghijklmnopqrstuvwxyz}
 	$$
@@ -436,7 +436,7 @@
 	$$
 
 === "源码"
-	```markdown
+	```latex
 	$$
 	\mathscr{ABCDEFGHIJKLMNOPQRSTUVWXYZ,abcdefghijklmnopqrstuvwxyz}
 	$$
@@ -448,7 +448,7 @@
 	$$
 
 === "源码"
-	```markdown
+	```latex
 	$$
 	\mathscr{ABCDEFGHIJKLMNOPQRSTUVWXYZ,abcdefghijklmnopqrstuvwxyz}
 	$$
