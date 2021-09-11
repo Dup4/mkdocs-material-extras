@@ -174,5 +174,5 @@ nav:
   - Home: 
     - Getting Started: index.md
   - Guide:
-    - 图片: guide/image.md
-    - 数学公式: guide/mathjax.md
+    - Images | 图片: guide/images.md
+    - Arithmatex | 数学公式: guide/arithmatex.md
