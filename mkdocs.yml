@@ -176,4 +176,5 @@ nav:
   - Guide:
     - Arithmatex: guide/arithmatex.md
     - Abbreviations: guide/abbreviations.md
+    - BetterEm: guide/betterem.md
     - Images: guide/images.md
