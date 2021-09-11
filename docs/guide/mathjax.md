@@ -324,82 +324,6 @@
 
 ===! "效果"
 	$$
-	\begin{array}{c}
-	\begin{array}{cc}
-	\begin{array}{c|cccc}
-	\text{min} & 0 & 1 & 2 & 3\\
-	\hline
-	0 & 0 & 0 & 0 & 0\\
-	1 & 0 & 1 & 1 & 1\\
-	2 & 0 & 1 & 2 & 2\\
-	3 & 0 & 1 & 2 & 3
-	\end{array}
-	&
-	\begin{array}{c|cccc}
-	\text{max}&0&1&2&3\\
-	\hline
-	0 & 0 & 1 & 2 & 3\\
-	1 & 1 & 1 & 2 & 3\\
-	2 & 2 & 2 & 2 & 3\\
-	3 & 3 & 3 & 3 & 3
-	\end{array}
-	\end{array}
-	\\
-	\begin{array}{c|cccc}
-	\Delta&0&1&2&3\\
-	\hline
-	0 & 0 & 1 & 2 & 3\\
-	1 & 1 & 0 & 1 & 2\\
-	2 & 2 & 1 & 0 & 1\\
-	3 & 3 & 2 & 1 & 0
-	\end{array}
-	\end{array}
-	$$
-
-=== "源码"
-	```latex
-	$$
-	\begin{array}{c}
-	\begin{array}{cc}
-	\begin{array}{c|cccc}
-	\text{min} & 0 & 1 & 2 & 3\\
-	\hline
-	0 & 0 & 0 & 0 & 0\\
-	1 & 0 & 1 & 1 & 1\\
-	2 & 0 & 1 & 2 & 2\\
-	3 & 0 & 1 & 2 & 3
-	\end{array}
-	&
-	\begin{array}{c|cccc}
-	\text{max}&0&1&2&3\\
-	\hline
-	0 & 0 & 1 & 2 & 3\\
-	1 & 1 & 1 & 2 & 3\\
-	2 & 2 & 2 & 2 & 3\\
-	3 & 3 & 3 & 3 & 3
-	\end{array}
-	\end{array}
-	\\
-	\begin{array}{c|cccc}
-	\Delta&0&1&2&3\\
-	\hline
-	0 & 0 & 1 & 2 & 3\\
-	1 & 1 & 0 & 1 & 2\\
-	2 & 2 & 1 & 0 & 1\\
-	3 & 3 & 2 & 1 & 0
-	\end{array}
-	\end{array}
-	$$
-	```
-
-===! "效果"
-	{==
-
-	由于注释的原因，该公式目前渲染不正常。
-
-	==}
-
-	$$
 	% outer vertical array of arrays
 	\begin{array}{c}
 	% inner horizontal array of arrays
@@ -1360,68 +1284,82 @@
 
 ===! "效果"
 	$$
-	\require{extpfeil} 
-	\begin{array}{ccc}
+	\require{extpfeil} % produce extensible horizontal arrows
+	\begin{array}{ccc} % arrange LPPs
+	% first row
+	% first LPP
 	\begin{array}{ll}
 	\max & z = c^T x \\
 	\text{s.t.} & A x \le b \\
 	& x \ge 0
 	\end{array}
 	& \xtofrom{\text{duality}} &
+	% second LPP
 	\begin{array}{ll}
 	\min & v = b^T y \\
 	\text{s.t.} & A^T y \ge c \\
 	& y \ge 0
 	\end{array} \\
 	({\cal PC}) & & ({\cal DC}) \\
-	\text{add } {\Large \downharpoonleft} \text{slack var} &  & \text{minus } {\Large \downharpoonright} \text{surplus var}\\ 
+	\text{add } {\Large \downharpoonleft} \text{slack var} &  & \text{minus } {\Large \downharpoonright} \text{surplus var}\\ % Change to your favorite arrow style
+	%
+	% second row
+	% third LPP
 	\begin{array}{ll}
 	\max & z = c^T x \\
 	\text{s.t.} & A x + s = b \\
 	& x,s \ge 0
 	\end{array}
 	& \xtofrom[\text{some steps skipped}]{\text{duality}} &
+	% fourth LPP
 	\begin{array}{ll}
 	\min & v = b^T y \\
 	\text{s.t.} & A^T y - t = c \\
 	& y,t \ge 0
 	\end{array} \\
 	({\cal PS}) & & ({\cal DS})
+	%
 	\end{array}
 	$$
 
 === "源码"
 	```latex
-	$$
-	\require{extpfeil} 
-	\begin{array}{ccc}
+	\require{extpfeil} % produce extensible horizontal arrows
+	\begin{array}{ccc} % arrange LPPs
+	% first row
+	% first LPP
 	\begin{array}{ll}
 	\max & z = c^T x \\
 	\text{s.t.} & A x \le b \\
 	& x \ge 0
 	\end{array}
 	& \xtofrom{\text{duality}} &
+	% second LPP
 	\begin{array}{ll}
 	\min & v = b^T y \\
 	\text{s.t.} & A^T y \ge c \\
 	& y \ge 0
 	\end{array} \\
 	({\cal PC}) & & ({\cal DC}) \\
-	\text{add } {\Large \downharpoonleft} \text{slack var} &  & \text{minus } {\Large \downharpoonright} \text{surplus var}\\ 
+	\text{add } {\Large \downharpoonleft} \text{slack var} &  & \text{minus } {\Large \downharpoonright} \text{surplus var}\\ % Change to your favorite arrow style
+	%
+	% second row
+	% third LPP
 	\begin{array}{ll}
 	\max & z = c^T x \\
 	\text{s.t.} & A x + s = b \\
 	& x,s \ge 0
 	\end{array}
 	& \xtofrom[\text{some steps skipped}]{\text{duality}} &
+	% fourth LPP
 	\begin{array}{ll}
 	\min & v = b^T y \\
 	\text{s.t.} & A^T y - t = c \\
 	& y,t \ge 0
 	\end{array} \\
 	({\cal PS}) & & ({\cal DS})
+	%
 	\end{array}
-	$$
 	```
 
 ===! "效果"

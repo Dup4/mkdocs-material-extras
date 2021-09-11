@@ -29,15 +29,15 @@ theme:
 
   features:
     - header.autohide
-    # - navigation.expand
     - navigation.instant
+    # - navigation.expand
     # - navigation.sections
     - navigation.tabs
     - navigation.top
     - search.highlight
     - search.share
     - search.suggest
-    - toc.integrate
+    # - toc.integrate
 
     # insiders only
     # - content.code.annotate
@@ -88,8 +88,8 @@ extra:
       link: https://github.com/Dup4/mkdocs-material-template
 
 extra_javascript:
-  - assets/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - assets/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js
 
 # Extensions
@@ -108,7 +108,6 @@ markdown_extensions:
       slugify: !!python/name:pymdownx.slugs.uslugify
       permalink: true
   - pymdownx.arithmatex:
-      generic: true
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret:
