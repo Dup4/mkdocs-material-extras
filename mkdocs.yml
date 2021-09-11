@@ -17,6 +17,10 @@ theme:
   name: material
   custom_dir: theme
 
+  # Static files
+  static_templates:
+    - 404.html
+
   # Don't include MkDocs' JavaScript
   include_search_page: false
   search_index_only: true
