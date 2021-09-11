@@ -10,6 +10,14 @@
 	$e^x$
 	```
 
+===! "效果"
+	`#!math p(x|y) = \frac{p(y|x)p(x)}{p(y)}`
+
+=== "源码"
+	```markdown
+	`#!math p(x|y) = \frac{p(y|x)p(x)}{p(y)}`
+	```	
+
 ## 块级公式
 
 === "效果"
