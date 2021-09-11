@@ -190,6 +190,82 @@
 
 ===! "效果"
 	$$
+	\begin{array}{c}
+	\begin{array}{cc}
+	\begin{array}{c|cccc}
+	\text{min} & 0 & 1 & 2 & 3\\
+	\hline
+	0 & 0 & 0 & 0 & 0\\
+	1 & 0 & 1 & 1 & 1\\
+	2 & 0 & 1 & 2 & 2\\
+	3 & 0 & 1 & 2 & 3
+	\end{array}
+	&
+	\begin{array}{c|cccc}
+	\text{max}&0&1&2&3\\
+	\hline
+	0 & 0 & 1 & 2 & 3\\
+	1 & 1 & 1 & 2 & 3\\
+	2 & 2 & 2 & 2 & 3\\
+	3 & 3 & 3 & 3 & 3
+	\end{array}
+	\end{array}
+	\\
+	\begin{array}{c|cccc}
+	\Delta&0&1&2&3\\
+	\hline
+	0 & 0 & 1 & 2 & 3\\
+	1 & 1 & 0 & 1 & 2\\
+	2 & 2 & 1 & 0 & 1\\
+	3 & 3 & 2 & 1 & 0
+	\end{array}
+	\end{array}
+	$$
+
+=== "源码"
+	```latex
+	$$
+	\begin{array}{c}
+	\begin{array}{cc}
+	\begin{array}{c|cccc}
+	\text{min} & 0 & 1 & 2 & 3\\
+	\hline
+	0 & 0 & 0 & 0 & 0\\
+	1 & 0 & 1 & 1 & 1\\
+	2 & 0 & 1 & 2 & 2\\
+	3 & 0 & 1 & 2 & 3
+	\end{array}
+	&
+	\begin{array}{c|cccc}
+	\text{max}&0&1&2&3\\
+	\hline
+	0 & 0 & 1 & 2 & 3\\
+	1 & 1 & 1 & 2 & 3\\
+	2 & 2 & 2 & 2 & 3\\
+	3 & 3 & 3 & 3 & 3
+	\end{array}
+	\end{array}
+	\\
+	\begin{array}{c|cccc}
+	\Delta&0&1&2&3\\
+	\hline
+	0 & 0 & 1 & 2 & 3\\
+	1 & 1 & 0 & 1 & 2\\
+	2 & 2 & 1 & 0 & 1\\
+	3 & 3 & 2 & 1 & 0
+	\end{array}
+	\end{array}
+	$$
+	```
+
+===! "效果"
+	{==
+
+	由于注释的原因，该公式目前渲染不正常。
+
+	==}
+
+	$$
 	% outer vertical array of arrays
 	\begin{array}{c}
 	% inner horizontal array of arrays
@@ -453,3 +529,8 @@
 	\mathscr{ABCDEFGHIJKLMNOPQRSTUVWXYZ,abcdefghijklmnopqrstuvwxyz}
 	$$
 	```
+
+## 参考
+
+- https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
+- https://www.yuque.com/yuque/help/brzicb
