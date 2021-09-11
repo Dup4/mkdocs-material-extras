@@ -1,4 +1,4 @@
-# Arithmatex | 数学公式
+# Arithmatex
 
 ## 行内公式
 

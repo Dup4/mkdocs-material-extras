@@ -1,4 +1,4 @@
-# Abbreviations | 缩写词
+# Abbreviations
 
 ===! "效果"
 	The HTML specification is maintained by the W3C.
