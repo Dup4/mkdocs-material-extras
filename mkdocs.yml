@@ -174,4 +174,5 @@ nav:
   - Home: 
     - Getting Started: index.md
   - Guide:
+    - 图片: guide/image.md
     - 数学公式: guide/mathjax.md
