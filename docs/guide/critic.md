@@ -1,9 +1,6 @@
----
-hide:
-  - toc
----
-
 # Critic
+
+## Usage
 
 Critic Markup uses special markup to insert, delete, substitute, highlight, and comment.
 

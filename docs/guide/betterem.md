@@ -1,9 +1,6 @@
----
-hide:
-  - toc
----
-
 # BetterEm
+
+## Usage
 
 !!! Note "Note"
     For all examples on this page, underscores are __smart__ and asterisks are not.
