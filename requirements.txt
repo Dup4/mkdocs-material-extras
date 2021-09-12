@@ -9,5 +9,4 @@ mkdocs-macros-plugin >= 0.6.0
 pymdown-extensions >= 8.2
 mkdocs-minify-plugin >= 0.4.0
 mkdocs-git-revision-date-localized-plugin >= 0.9.3
-pyspelling >= 2.7.3
 git+https://github.com/facelessuser/pymdown-lexers.git
