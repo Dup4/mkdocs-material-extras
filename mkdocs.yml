@@ -57,7 +57,7 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: cyan
-      accent: cyan
+      accent: deep purple
       toggle:
         icon: material/weather-night
         name: Switch to light mode
@@ -177,6 +177,7 @@ nav:
     - Arithmatex: guide/arithmatex.md
     - Abbreviations: guide/abbreviations.md
     - BetterEm: guide/betterem.md
+    - Buttons: guide/buttons.md
     - Caret: guide/ceret.md
     - Critic: guide/critic.md
     - Details: guide/details.md
