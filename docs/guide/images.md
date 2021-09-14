@@ -1,11 +1,23 @@
 # Images
 
+## Raw Image
+
 ===! "效果"
 	![](./images/ZoomOut_ZH-CN4471982075_1920x1080.jpeg)
 
 === "源码"
 	```markdown
 	![](./images/ZoomOut_ZH-CN4471982075_1920x1080.jpeg)
+	```
+
+## Image With Link
+
+===! "效果"
+	[![](./images/ZoomOut_ZH-CN4471982075_1920x1080.jpeg)](./images/ZoomOut_ZH-CN4471982075_1920x1080.jpeg)
+
+=== "源码"
+	```markdown
+	[![](./images/ZoomOut_ZH-CN4471982075_1920x1080.jpeg)](./images/ZoomOut_ZH-CN4471982075_1920x1080.jpeg)
 	```
 
 ## Image alignment
