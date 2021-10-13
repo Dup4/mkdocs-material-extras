@@ -16,9 +16,9 @@ _Result_:
 
 [Subscribe to our mailing list][4]{ .md-button }
 
-  [2]: #attribute-list
-  [3]: ../setup/changing-the-colors.md#primary-color
-  [4]: javascript:alert$.next("Done!")
+    [2]: #attribute-list
+    [3]: ../setup/changing-the-colors.md#primary-color
+    [4]: javascript:alert$.next("Done!")
 
 ## Adding primary buttons
 
@@ -36,7 +36,7 @@ _Result_:
 
 [Subscribe to our mailing list][4]{ .md-button .md-button--primary }
 
-  [5]: ../index.md
+    [5]: ../index.md
 
 ## Adding icon buttons
 
@@ -54,5 +54,5 @@ _Result_:
 
 [Submit :fontawesome-solid-paper-plane:][4]{ .md-button .md-button--primary }
 
-  [6]: icons-emojis.md#using-icons
-  [7]: icons-emojis.md#search
+    [6]: icons-emojis.md#using-icons
+    [7]: icons-emojis.md#search

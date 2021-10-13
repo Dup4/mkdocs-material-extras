@@ -51,7 +51,7 @@ _Result_:
 ### Removing the title
 
 Similar to [changing the title][8], the icon and title can be omitted entirely
-by adding an empty string directly after the type qualifier. Note that this 
+by adding an empty string directly after the type qualifier. Note that this
 will not work for [collapsible blocks][9].
 
 _Example_:
