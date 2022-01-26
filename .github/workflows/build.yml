@@ -45,4 +45,4 @@ jobs:
           force_orphan: true
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
-          commit_message: Deploying to gh-pages @ ${{ env.GITHUB_SHA }} 🚀
+          commit_message: 🚀 Deploying to gh-pages @ ${{ env.GITHUB_SHA }}
