@@ -38,9 +38,9 @@ theme:
     - search.share
     - search.suggest
     # - toc.integrate
+    - content.code.annotate
 
     # insiders only
-    # - content.code.annotate
     # - content.tabs.link
     # - navigation.indexes
     # - navigation.tabs.sticky
