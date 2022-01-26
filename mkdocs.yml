@@ -162,6 +162,7 @@ markdown_extensions:
         #   class: md-render
         #   format: !!python/name:tools.pymdownx_md_render.md_sub_render
   - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
       clickable_checkbox: false
