@@ -67,7 +67,7 @@ theme:
     code: Roboto Mono
   favicon: assets/favicon.png
   icon:
-    repo: fontawesome/brands/git-alt
+    repo: fontawesome/brands/github
     logo: logo
 
 # Plugins
