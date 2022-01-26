@@ -14,7 +14,7 @@ env:
   PYTHON_VERSION: 3.9
 
 jobs:
-  documentation:
+  build:
     name: Build documentation
     runs-on: ubuntu-latest
     steps:
@@ -31,7 +31,7 @@ jobs:
         run: |
           pip3 install -U -r requirements.txt
 
-      - name: Build documentation
+      - name: Build
         env:
           GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
         run: |
