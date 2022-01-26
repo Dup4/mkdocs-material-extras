@@ -1,0 +1,30 @@
+{
+  "name": "mkdocs-material-template",
+  "version": "1.0.0",
+  "description": "mkdocs material template",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dup4/mkdocs-material-template.git"
+  },
+  "keywords": [
+    "mkdocs",
+    "material",
+    "template"
+  ],
+  "author": "Dup4",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dup4/mkdocs-material-template/issues"
+  },
+  "homepage": "https://github.com/Dup4/mkdocs-material-template#readme",
+  "dependencies": {
+    "mathjax-node": "^2.1.1"
+  }
+}

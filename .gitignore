@@ -1,6 +1,6 @@
-
 .DS_Store
 .vscode/
 
-site/
-venv/
+/site
+/venv
+/node_modules

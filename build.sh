@@ -1,3 +1,3 @@
 #! /bin/bash
 
-mkdocs build
+mkdocs build -v
