@@ -65,10 +65,10 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-
+  favicon: assets/favicon.png
   icon:
     repo: fontawesome/brands/git-alt
-    logo: material/library
+    logo: logo
 
 # Plugins
 plugins:
