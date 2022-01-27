@@ -88,12 +88,12 @@ extra:
       link: https://github.com/Dup4/mkdocs-material-template
 
 extra_css:
-  - assets/mathjax.css
+  # - assets/mathjax.css
 
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
-  # - assets/mathjax.js
-  # - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js
+  - assets/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js
 
 # Extensions
 markdown_extensions:
