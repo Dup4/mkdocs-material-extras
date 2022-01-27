@@ -28,6 +28,7 @@ Promise.all(
     await pool.run(filename);
   })
 ).then(() => {
+  pool.destroy();
   const endTime = +new Date();
   console.log(
     `${green("INFO")}  MathJax rendered finished in ${
