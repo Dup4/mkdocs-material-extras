@@ -193,5 +193,6 @@ nav:
     - Buttons: guide/buttons.md
     - Caret: guide/ceret.md
     - Critic: guide/critic.md
+    - Data tables: guide/data-tables.md
     - Details: guide/details.md
     - Images: guide/images.md
