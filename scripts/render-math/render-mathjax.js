@@ -105,7 +105,13 @@ async function RenderMathJax(content) {
   if (needRenderList.length > 0) {
     const { readFile } = require("hexo-fs");
     const { join } = require("path");
-    const mathCSSPath = join(__dirname, "assets", "stylesheets", "mathjax.css");
+    const mathCSSPath = join(
+      __dirname,
+      "assets",
+      "dist",
+      "stylesheets",
+      "mathjax.css"
+    );
 
     const cssContent = await readFile(mathCSSPath);
     const styleNode = dom.window.document.createElement("style");
