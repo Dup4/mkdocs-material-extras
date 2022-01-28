@@ -25,14 +25,18 @@ jobs:
           python-version: 3.9
           architecture: x64
 
+      - name: Install Python dependencies
+        run: |
+          pip3 install -U -r requirements.txt
+
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
           node-version: 16
 
-      - name: Install Python dependencies
+      - name: Install Node dependencies
         run: |
-          pip3 install -U -r requirements.txt
+          yarn
 
       - name: Build
         env:
