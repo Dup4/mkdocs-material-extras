@@ -10,7 +10,7 @@ async function RenderMathJaxFile(filename) {
   const startTime = +new Date();
 
   let content = await readFile(filename);
-  const renderContent = RenderMathJax(content);
+  const renderContent = await RenderMathJax(content);
   await writeFile(filename, renderContent);
 
   const endTime = +new Date();

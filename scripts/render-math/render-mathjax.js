@@ -48,7 +48,7 @@ function getMathJax() {
  * @param {string} content
  * @returns {string}
  */
-function RenderMathJax(content) {
+async function RenderMathJax(content) {
   const jsdom = require("jsdom");
   const util = require("util");
 
@@ -56,10 +56,11 @@ function RenderMathJax(content) {
   const mathjax = getMathJax();
 
   const dom = new JSDOM(content);
-
-  for (const node of dom.window.document.querySelectorAll(
+  const needRenderList = dom.window.document.querySelectorAll(
     'script[type^="math/tex"]'
-  )) {
+  );
+
+  for (const node of needRenderList) {
     const mathTex = node.textContent;
     const displayMode = Boolean(node.type.match(/; *mode=display/));
 
@@ -81,7 +82,7 @@ function RenderMathJax(content) {
     mjxContainerNode.setAttribute("display", String(displayMode));
     mjxContainerNode.innerHTML = result;
 
-    divNode = dom.window.document.createElement("div");
+    const divNode = dom.window.document.createElement("div");
     divNode.setAttribute(
       "class",
       `arithmatex_${displayMode ? "display" : "inline"}`
@@ -92,6 +93,20 @@ function RenderMathJax(content) {
     const ppNode = node.parentNode.parentNode;
     ppNode.insertBefore(divNode, pNode);
     ppNode.removeChild(pNode);
+  }
+
+  if (needRenderList.length > 0) {
+    const { readFile } = require("hexo-fs");
+    const { join } = require("path");
+    const mathCSSPath = join(__dirname, "assets", "stylesheets", "mathjax.css");
+
+    const cssContent = await readFile(mathCSSPath);
+    const styleNode = dom.window.document.createElement("style");
+    styleNode.id = "MJX-SVG-styles";
+    styleNode.innerHTML = cssContent;
+
+    const headNode = dom.window.document.querySelector("head");
+    headNode.appendChild(styleNode);
   }
 
   return dom.serialize();

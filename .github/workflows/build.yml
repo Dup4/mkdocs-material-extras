@@ -10,9 +10,6 @@ on:
       - main
   workflow_dispatch:
 
-env:
-  PYTHON_VERSION: 3.x
-
 jobs:
   build:
     name: Build documentation
@@ -25,7 +22,13 @@ jobs:
       - name: Set up Python runtime
         uses: actions/setup-python@v1
         with:
-          python-version: ${{ env.PYTHON_VERSION }}
+          python-version: 3.9
+          architecture: x64
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
 
       - name: Install Python dependencies
         run: |
@@ -35,7 +38,7 @@ jobs:
         env:
           GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
         run: |
-          mkdocs build -v
+          bash -e build.sh
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3

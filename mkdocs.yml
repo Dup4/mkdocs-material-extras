@@ -88,7 +88,6 @@ extra:
       link: https://github.com/Dup4/mkdocs-material-template
 
 extra_css:
-  # - assets/mathjax.css
 
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6

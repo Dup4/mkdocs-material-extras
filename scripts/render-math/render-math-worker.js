@@ -1,7 +1,7 @@
 const { isMainThread, parentPort } = require("worker_threads");
 
 if (isMainThread) {
-  throw new Error("Its not a worker");
+  throw new Error("It's not a worker.");
 }
 
 const RenderMathJaxFile = require("./render-mathjax-file");
