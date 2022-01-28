@@ -82,16 +82,23 @@ async function RenderMathJax(content) {
     mjxContainerNode.setAttribute("display", String(displayMode));
     mjxContainerNode.innerHTML = result;
 
-    const divNode = dom.window.document.createElement("div");
-    divNode.setAttribute(
-      "class",
-      `arithmatex_${displayMode ? "display" : "inline"}`
-    );
-    divNode.innerHTML = mjxContainerNode.outerHTML;
+    const mathNode = (() => {
+      if (displayMode) {
+        const divNode = dom.window.document.createElement("div");
+        divNode.setAttribute("class", "arithmatex_display");
+        divNode.innerHTML = mjxContainerNode.outerHTML;
+        return divNode;
+      } else {
+        const spanNode = dom.window.document.createElement("span");
+        spanNode.setAttribute("class", "arithmatex_inline");
+        spanNode.innerHTML = mjxContainerNode.outerHTML;
+        return spanNode;
+      }
+    })();
 
     const pNode = node.parentNode;
     const ppNode = node.parentNode.parentNode;
-    ppNode.insertBefore(divNode, pNode);
+    ppNode.insertBefore(mathNode, pNode);
     ppNode.removeChild(pNode);
   }
 
