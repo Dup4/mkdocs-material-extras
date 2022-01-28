@@ -187,8 +187,8 @@ nav:
   - Home:
     - Getting Started: index.md
   - Guide:
-    - Arithmatex: guide/arithmatex.md
     - Abbreviations: guide/abbreviations.md
+    - Arithmatex: guide/arithmatex.md
     - BetterEm: guide/betterem.md
     - Buttons: guide/buttons.md
     - Caret: guide/ceret.md
