@@ -180,6 +180,7 @@ nav:
     - Buttons: guide/buttons.md
     - Caret: guide/ceret.md
     - Critic: guide/critic.md
+    - Code Blocks: guide/code-blocks.md
     - Data tables: guide/data-tables.md
     - Details: guide/details.md
     - Footnotes: guide/footnotes.md
