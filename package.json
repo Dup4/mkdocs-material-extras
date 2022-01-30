@@ -7,8 +7,9 @@
         "doc": "docs"
     },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "serve": "mkdocs serve"
+        "build": "bash build.sh",
+        "serve": "mkdocs serve",
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",
