@@ -1,6 +1,6 @@
 {
     "name": "mkdocs-render-math-ssr",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "render math ssr for mkdocs",
     "bin": "render-math.js",
     "scripts": {
