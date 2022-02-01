@@ -115,7 +115,6 @@ markdown_extensions:
   - pymdownx.caret:
   - pymdownx.critic:
   - pymdownx.keys:
-      separator: "\uff0b"
   - pymdownx.tilde:
   - pymdownx.mark:
   - pymdownx.details:
@@ -156,13 +155,11 @@ markdown_extensions:
       custom_checkbox: true
       clickable_checkbox: false
   - pymdownx.escapeall:
-      hardbreak: True
-      nbsp: True
+      hardbreak: true
+      nbsp: true
   - pymdownx.progressbar:
   - pymdownx.striphtml:
   - pymdownx.snippets:
-      base_path:
-      auto_append:
       check_paths: true
   - pymdownx.saneheaders:
 
