@@ -1,8 +1,8 @@
 {
     "name": "mkdocs-render-math-ssr",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "render math ssr for mkdocs",
-    "main": "render-math.js",
+    "bin": "render-math.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
