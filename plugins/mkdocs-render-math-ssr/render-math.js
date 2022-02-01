@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 const Promise = require("bluebird");
 const { join } = require("path");
 const { green } = require("chalk");
