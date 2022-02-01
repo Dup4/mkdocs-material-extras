@@ -27,12 +27,6 @@
     },
     "homepage": "https://github.com/Dup4/mkdocs-material-template#readme",
     "dependencies": {
-        "bluebird": "^3.7.2",
-        "chalk": "^4.1.0",
-        "escape-html": "^1.0.3",
-        "hexo-fs": "^3.1.0",
-        "jsdom": "^19.0.0",
-        "mathjax-full": "^3.2.0",
-        "yargs": "^17.3.1"
+        "mkdocs-render-math-ssr": "^1.0.1"
     }
 }

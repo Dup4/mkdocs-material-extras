@@ -149,9 +149,9 @@ combined-stream@^1.0.8:
     delayed-stream "~1.0.0"
 
 commander@>=7.0.0:
-  version "8.3.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-8.3.0.tgz#4837ea1b2da67b9c616a67afbb0fafee567bca66"
-  integrity sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-9.0.0.tgz#86d58f24ee98126568936bd1d3574e0308a99a40"
+  integrity sha512-JJfP2saEKbQqvW+FI93OYUB4ByV5cizMpFMiiJI8xDbBvQvSkIk0VvQdn1CZ8mqAO8Loq2h0gYTYtDFUZUeERw==
 
 cross-spawn@^7.0.0:
   version "7.0.3"
@@ -545,6 +545,19 @@ mj-context-menu@^0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/mj-context-menu/-/mj-context-menu-0.6.1.tgz#a043c5282bf7e1cf3821de07b13525ca6f85aa69"
   integrity sha512-7NO5s6n10TIV96d4g2uDpG7ZDpIhMh0QNfGdJw/W47JswFcosz457wqz/b5sAKvl12sxINGFCn80NZHKwxQEXA==
+
+mkdocs-render-math-ssr@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/mkdocs-render-math-ssr/-/mkdocs-render-math-ssr-1.0.1.tgz#a6662a1b89f9aca3f407bbf1c0417020adb28e9d"
+  integrity sha512-aEMljn+plpc0mYclMQ0vlShFu7yO2GanxbsLBsX4hz3oVTIvBdwygnjhcWaLybOjB8+c8fZ3yPdSEkzMcE+CZw==
+  dependencies:
+    bluebird "^3.7.2"
+    chalk "^4.1.0"
+    escape-html "^1.0.3"
+    hexo-fs "^3.1.0"
+    jsdom "^19.0.0"
+    mathjax-full "^3.2.0"
+    yargs "^17.3.1"
 
 ms@2.1.2:
   version "2.1.2"
