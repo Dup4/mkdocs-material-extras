@@ -42,7 +42,7 @@ jobs:
         env:
           GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
         run: |
-          yarn build
+          bash -e build.sh
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3

@@ -7,7 +7,7 @@
         "doc": "docs"
     },
     "scripts": {
-        "build": "bash -e build.sh",
+        "build": "bash build.sh",
         "serve": "mkdocs serve",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
