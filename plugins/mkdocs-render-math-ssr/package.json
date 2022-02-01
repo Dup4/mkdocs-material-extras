@@ -1,0 +1,25 @@
+{
+  "name": "mkdocs-render-math-ssr",
+  "version": "1.0.0",
+  "description": "render math ssr for mkdocs",
+  "main": "render-math.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dup4/mkdocs-material-template.git"
+  },
+  "keywords": [
+    "mkdocs",
+    "render",
+    "math",
+    "ssr"
+  ],
+  "author": "Dup4 <lyuzhi.pan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dup4/mkdocs-material-template/issues"
+  },
+  "homepage": "https://github.com/Dup4/mkdocs-material-template#readme"
+}
