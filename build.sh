@@ -12,8 +12,8 @@ function init() {
 
 function build() {
     mkdocs build -v
-    npx mkdocs-render-math-ssr --srcDir=./site --useWorker
-    # node ./scripts/render-math/render-math --srcDir=./site --useWorker
+    # npx mkdocs-render-math-ssr --srcDir=./site --useWorker
+    node ./plugins/mkdocs-render-math-ssr/render-math --srcDir=./site --useWorker
 }
 
 function post() {
