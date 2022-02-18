@@ -4,6 +4,7 @@ const Promise = require("bluebird");
 const { join } = require("path");
 const { green } = require("chalk");
 const { listDir } = require("hexo-fs");
+const fs = require("fs");
 
 const argv = require("yargs")
   .demand(0)
@@ -65,6 +66,12 @@ const { render, post } = argv.useWorker
   : renderWithoutWorker();
 
 const startTime = +new Date();
+
+if (!fs.existsSync(srcDir)) {
+  console.log(`${green("INFO")} ${srcDir} not exists.`);
+  post();
+  process.exit(0);
+}
 
 Promise.all(
   listDir(srcDir).map(async (item) => {
