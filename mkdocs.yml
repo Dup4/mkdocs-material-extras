@@ -10,7 +10,7 @@ repo_url: https://github.com/Dup4/mkdocs-material-template
 edit_uri: tree/main/docs
 
 # Copyright
-copyright: Copyright &copy; 2022 <a href="https://github.com/Dup4" target="_blank" rel="noopener">Dup4</a>
+copyright: Copyright &copy; 2022 - Present <a href="https://github.com/Dup4" target="_blank" rel="noopener">Dup4</a>
 
 # Configuration
 theme:
@@ -65,18 +65,20 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  favicon: assets/favicon.png
   icon:
     repo: fontawesome/brands/github
-    logo: logo
 
 # Plugins
 plugins:
   - search:
       lang: ja
+  - rss
   - git-revision-date-localized
   - minify:
       minify_html: true
+  - redirects:
+      redirect_maps:
+        "index.md": "guide/abbreviations.md"
 
 # Customization
 extra:
@@ -167,8 +169,6 @@ docs_dir: docs
 
 # Page tree
 nav:
-  - Home:
-    - Getting Started: index.md
   - Guide:
     - Abbreviations: guide/abbreviations.md
     - Arithmatex: guide/arithmatex.md
