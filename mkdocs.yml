@@ -73,7 +73,9 @@ plugins:
   - search:
       lang: ja
   - rss
-  - git-revision-date-localized
+  - git-revision-date-localized:
+      type: iso_date
+      enable_creation_date: true
   - minify:
       minify_html: true
   - redirects:
