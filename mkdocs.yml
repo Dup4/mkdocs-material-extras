@@ -84,6 +84,7 @@ plugins:
 
 # Customization
 extra:
+  generator: false
   analytics:
     provider: google
     property: !ENV GOOGLE_ANALYTICS_KEY
