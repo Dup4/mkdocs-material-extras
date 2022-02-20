@@ -169,7 +169,7 @@ docs_dir: docs
 
 # Page tree
 nav:
-  - Guide:
+  - Tutorial:
     - Abbreviations: guide/abbreviations.md
     - Arithmatex: guide/arithmatex.md
     - BetterEm: guide/betterem.md
