@@ -25,7 +25,7 @@ theme:
   include_search_page: false
   search_index_only: true
 
-  language: zh
+  language: en
 
   features:
     - header.autohide
@@ -74,7 +74,7 @@ plugins:
       lang: ja
   - rss
   - git-revision-date-localized:
-      type: iso_date
+      type: date
       enable_creation_date: true
   - minify:
       minify_html: true
@@ -145,11 +145,8 @@ markdown_extensions:
   - pymdownx.superfences:
       preserve_tabs: true
       custom_fences:
-        - name: diagram
-          class: diagram
-          format: !!python/name:pymdownx.superfences.fence_code_format
         - name: mermaid
-          class: mermaid-experimental
+          class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
         - name: math
           class: arithmatex
@@ -182,5 +179,6 @@ nav:
     - Code Blocks: guide/code-blocks.md
     - Data tables: guide/data-tables.md
     - Details: guide/details.md
+    - Diagrams: guide/diagrams.md
     - Footnotes: guide/footnotes.md
     - Images: guide/images.md
