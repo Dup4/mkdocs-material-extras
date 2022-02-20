@@ -80,7 +80,7 @@ plugins:
       minify_html: true
   - redirects:
       redirect_maps:
-        "index.md": "guide/abbreviations.md"
+        "index.md": "tutorial/abbreviations.md"
 
 # Customization
 extra:
@@ -170,15 +170,15 @@ docs_dir: docs
 # Page tree
 nav:
   - Tutorial:
-    - Abbreviations: guide/abbreviations.md
-    - Arithmatex: guide/arithmatex.md
-    - BetterEm: guide/betterem.md
-    - Buttons: guide/buttons.md
-    - Caret: guide/ceret.md
-    - Critic: guide/critic.md
-    - Code Blocks: guide/code-blocks.md
-    - Data tables: guide/data-tables.md
-    - Details: guide/details.md
-    - Diagrams: guide/diagrams.md
-    - Footnotes: guide/footnotes.md
-    - Images: guide/images.md
+    - Abbreviations: tutorial/abbreviations.md
+    - Arithmatex: tutorial/arithmatex.md
+    - BetterEm: tutorial/betterem.md
+    - Buttons: tutorial/buttons.md
+    - Caret: tutorial/ceret.md
+    - Critic: tutorial/critic.md
+    - Code Blocks: tutorial/code-blocks.md
+    - Data tables: tutorial/data-tables.md
+    - Details: tutorial/details.md
+    - Diagrams: tutorial/diagrams.md
+    - Footnotes: tutorial/footnotes.md
+    - Images: tutorial/images.md
