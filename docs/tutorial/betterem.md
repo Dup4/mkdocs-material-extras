@@ -80,7 +80,6 @@ BetterEm will also ensure that smart mode breaks proper when an inner like token
         __This will all be bold_ because of the token is less than that of the surrounding.__
         ```
 
-
 BetterEm will allow non-smart emphasis to contain "floating" like tokens.
 
 !!! example "Floating Token Example"
