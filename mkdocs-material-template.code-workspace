@@ -41,6 +41,6 @@
             "tag:yaml.org,2002:python/name:pymdownx.slugs.uslugify",
             "tag:yaml.org,2002:python/name:pymdownx.arithmatex.inline_mathjax_format",
             "tag:yaml.org,2002:python/name:pymdownx.arithmatex.fence_mathjax_format"
-        ]
+        ],
     },
 }
