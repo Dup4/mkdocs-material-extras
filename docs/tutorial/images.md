@@ -23,7 +23,7 @@
 ## Image alignment
 
 ===! "效果"
-    _Left_:
+    *Left*:
 
     ![Placeholder](https://dummyimage.com/600x400/f5f5f5/aaaaaa&text=–%20Image%20–){ align=left width=300 }
 
@@ -33,7 +33,7 @@
 
 === "源码"
     ```markdown
-    _Left_:
+    *Left*:
 
     ![Placeholder](https://dummyimage.com/600x400/f5f5f5/aaaaaa&text=–%20Image%20–){ align=left width=300 }
 
@@ -43,7 +43,7 @@
     ```
 
 ===! "效果"
-    _Right_:
+    *Right*:
 
     ![Placeholder](https://dummyimage.com/600x400/f5f5f5/aaaaaa&text=–%20Image%20–){ align=right width=300 }
 
@@ -53,7 +53,7 @@
 
 === "源码"
     ```markdown
-    _Right_:
+    *Right*:
 
     ![Placeholder](https://dummyimage.com/600x400/f5f5f5/aaaaaa&text=–%20Image%20–){ align=right width=300 }
 

@@ -18,9 +18,7 @@ markdown_extensions:
 
 See additional configuration options:
 
-- [Footnotes]
-
-  [Footnotes]: ../setup/extensions/python-markdown.md#footnotes
+- [footnotes][]
 
 ## Usage
 
@@ -84,3 +82,5 @@ Paragraphs can be written on the next line and must be indented by four spaces:
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus
     auctor massa, nec semper lorem quam in massa.
+
+[footnotes]: ../setup/extensions/python-markdown.md#footnotes

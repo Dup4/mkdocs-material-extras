@@ -36,13 +36,6 @@ Code annotations can be placed anywhere in a code block where a comment for the
 language of the block can be placed, e.g. for JavaScript in `#!js // ...` and
 `#!js /* ... */`, for YAML in `#!yaml # ...`, etc.[^1]:
 
-  [^1]:
-    Code annotations require syntax highlighting with [Pygments] – they're
-    currently not compatible with JavaScript syntax highlighters, or languages
-    that do not have comments in their grammar. However, we're actively working
-    on supporting alternate ways of defining code annotations, allowing to
-    always place code annotations at the end of lines.
-
 ```` markdown title="Code block with annotation"
 ``` yaml
 theme:
@@ -50,8 +43,8 @@ theme:
     - content.code.annotate # (1)
 ```
 
-1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
-    text__, images, ... basically anything that can be written in Markdown.
+1.  :man_raising_hand: I'm a code annotation! I can contain `code`, **formatted
+    text**, images, ... basically anything that can be written in Markdown.
 ````
 
 <div class="result" markdown>
@@ -62,8 +55,8 @@ theme:
     - content.code.annotate # (1)
 ```
 
-1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
-    text__, images, ... basically anything that can be written in Markdown.
+1.  :man_raising_hand: I'm a code annotation! I can contain `code`, **formatted
+    text**, images, ... basically anything that can be written in Markdown.
 
 </div>
 
@@ -101,7 +94,7 @@ def bubble_sort(items):
 Specific lines can be highlighted by passing the line numbers to the `hl_lines`
 argument placed right after the language shortcode. Note that line counts start
 at `1`, regardless of the starting line number specified as part of
-[`linenums`][Adding line numbers]:
+[`linenums`][adding line numbers]:
 
 ```` markdown title="Code block with highlighted lines"
 ``` py hl_lines="2 3"
@@ -125,8 +118,6 @@ def bubble_sort(items):
 
 </div>
 
-  [Adding line numbers]: #adding-line-numbers
-
 ### Highlighting inline code blocks
 
 When [InlineHilite] is enabled, syntax highlighting can be applied to inline
@@ -145,8 +136,8 @@ The `#!python range()` function is used to generate a sequence of numbers.
 
 ### Embedding external files
 
-When [Snippets] is enabled, content from other files (including source files)
-can be embedded by using the [`--8<--` notation][Snippets notation] directly
+When Snippets is enabled, content from other files (including source files)
+can be embedded by using the [`--8<--` notation][snippets notation] directly
 from within a code block:
 
 ```` markdown title="Code block with external content"
@@ -163,4 +154,12 @@ last 4 years
 
 </div>
 
-  [Snippets notation]: https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-notation
+[^1]:
+    Code annotations require syntax highlighting with [Pygments] – they're
+    currently not compatible with JavaScript syntax highlighters, or languages
+    that do not have comments in their grammar. However, we're actively working
+    on supporting alternate ways of defining code annotations, allowing to
+    always place code annotations at the end of lines.
+
+[adding line numbers]: #adding-line-numbers
+[snippets notation]: https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-notation

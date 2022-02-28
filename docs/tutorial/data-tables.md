@@ -26,7 +26,7 @@ contain arbitrary Markdown, including inline code blocks.
 ### Column alignment
 
 If you want to align a specific column to the `left`, `center` or `right`, you
-can use the [regular Markdown syntax] placing `:` characters at the beginning
+can use the [regular markdown syntax][] placing `:` characters at the beginning
 and/or end of the divider.
 
 === "Left"
@@ -89,4 +89,4 @@ and/or end of the divider.
 
     </div>
 
-[regular Markdown syntax]: https://www.markdownguide.org/extended-syntax/#tables
+[regular markdown syntax]: https://www.markdownguide.org/extended-syntax/#tables

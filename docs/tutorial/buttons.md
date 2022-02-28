@@ -6,13 +6,13 @@ When the [Attribute List][2] extension is enabled, any clickable element can be
 converted into a button by adding the `.md-button` CSS class, which will receive
 the selected [primary color][3].
 
-_Example_:
+*Example*:
 
 ``` markdown
 [Subscribe to our mailing list](#){ .md-button }
 ```
 
-_Result_:
+*Result*:
 
 [Subscribe to our mailing list][4]{ .md-button }
 
@@ -22,13 +22,13 @@ If you want to display a filled, primary button (like on the [landing page][5]
 of Material for MkDocs), add both the `.md-button` and `.md-button--primary`
 CSS classes.
 
-_Example_:
+*Example*:
 
 ``` markdown
 [Subscribe to our mailing list](#){ .md-button .md-button--primary }
 ```
 
-_Result_:
+*Result*:
 
 [Subscribe to our mailing list][4]{ .md-button .md-button--primary }
 
@@ -38,13 +38,13 @@ Of course, icons can be added to both types of buttons by using the [regular
 icon syntax][6] and referencing a valid path to [any icon bundled with the
 theme][7].
 
-_Example_:
+*Example*:
 
 ``` markdown
 [Submit :fontawesome-solid-paper-plane:](#){ .md-button .md-button--primary }
 ```
 
-_Result_:
+*Result*:
 
 [Submit :fontawesome-solid-paper-plane:][4]{ .md-button .md-button--primary }
 
