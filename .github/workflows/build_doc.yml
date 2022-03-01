@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build-doc:
     name: Build documentation
     runs-on: ubuntu-latest
     steps:
@@ -41,7 +41,7 @@ jobs:
 
       - name: Build
         env:
-          GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
+          GOOGLE_ANALYTICS_KEY: G-QR41N1MXE9
         run: |
           bash -e build.sh
 
