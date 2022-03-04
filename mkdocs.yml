@@ -114,7 +114,7 @@ markdown_extensions:
   - markdown.extensions.toc:
       slugify: !!python/name:pymdownx.slugs.uslugify
       permalink: true
-      toc_depth: 3
+      toc_depth: 2-3
   - pymdownx.arithmatex:
   - pymdownx.betterem:
   - pymdownx.caret:
@@ -182,3 +182,4 @@ nav:
     - Diagrams: tutorial/diagrams.md
     - Footnotes: tutorial/footnotes.md
     - Images: tutorial/images.md
+    - Table of Contents: tutorial/table-of-contents.md
