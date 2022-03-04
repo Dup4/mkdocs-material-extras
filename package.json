@@ -1,8 +1,7 @@
 {
-    "name": "mkdocs-material-template",
-    "version": "1.0.0",
-    "description": "mkdocs material template",
-    "main": "index.js",
+    "name": "mkdocs-material-extras",
+    "version": "0.0.0",
+    "description": "mkdocs material extras",
     "directories": {
         "doc": "docs"
     },
@@ -15,19 +14,22 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Dup4/mkdocs-material-template.git"
+        "url": "git+https://github.com/Dup4/mkdocs-material-extras.git"
     },
     "keywords": [
         "mkdocs",
         "material",
-        "template"
+        "theme"
     ],
-    "author": "Dup4",
+    "author": {
+        "name": "Dup4",
+        "email": "lyuzhi.pan@gmail.com"
+    },
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/Dup4/mkdocs-material-template/issues"
+        "url": "https://github.com/Dup4/mkdocs-material-extras/issues"
     },
-    "homepage": "https://github.com/Dup4/mkdocs-material-template#readme",
+    "homepage": "https://github.com/Dup4/mkdocs-material-extras#readme",
     "dependencies": {
         "mkdocs-render-math-ssr": "^1.0.5",
         "remark-clang-format": "^1.9.3",

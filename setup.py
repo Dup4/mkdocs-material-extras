@@ -3,67 +3,48 @@
 """Setup mkdocs material theme extras."""
 
 from setuptools import setup, find_packages
-import os
+import json
+
+# Load package.json contents
+with open("package.json") as f:
+    package = json.load(f)
 
 
-def get_version():
-    """Get version and version_info without importing the entire module."""
-
-    import importlib.util
-
-    path = os.path.join(os.path.dirname(__file__),
-                        'mkdocs-material-extras', '__meta__.py')
-    spec = importlib.util.spec_from_file_location("__meta__", path)
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    vi = module.__version_info__
-    return vi._get_canonical(), vi._get_dev_status()
+# Load list of dependencies
+with open("requirements/project.txt") as f:
+    install_requires = [
+        line for line in f.read().split("\n")
+        if line and not line.startswith("#")
+    ]
 
 
-def get_requirements(req):
-    """Load list of dependencies."""
-
-    install_requires = []
-    with open(req) as f:
-        for line in f:
-            if not line.startswith("#"):
-                install_requires.append(line.strip())
-    return install_requires
-
-
-def get_description():
-    """Get long description."""
-
-    with open("README.md", 'r') as f:
-        desc = f.read()
-    return desc
-
-
-VER, DEVSTATUS = get_version()
+# Load README contents
+with open("README.md", encoding="utf-8") as f:
+    long_description = f.read()
 
 
 setup(
     name='mkdocs-material-extras',
-    version=VER,
-    keywords='mkdocs plugin material',
-    description='Plugin to extend MkDocs Material theme.',
-    long_description=get_description(),
-    long_description_content_type='text/markdown',
-    author='Dup4',
-    author_email='lyuzhi.pan@gmail.com',
+    version=package["version"],
+    url=package["homepage"],
+    license=package["license"],
+    description=package["description"],
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    author=package["author"]["name"],
+    author_email=package["author"]["email"],
+    keywords=package["keywords"],
     python_requires='>=3.7',
     include_package_data=True,
     entry_points={
         'mkdocs.plugins': [
-            'mkdocs-material-extras = mkdocs-material-extras:MkdocsMaterialExtras',
+            'mkdocs_material_extras = mkdocs_material_extras:MkdocsMaterialExtras',
         ]
     },
-    url='https://github.com/Dup4/mkdocs-material-extras',
     packages=find_packages(exclude=['tools', 'docs', 'test*']),
-    install_requires=get_requirements("requirements/project.txt"),
-    license='MIT License',
+    install_requires=install_requires,
     classifiers=[
-        'Development Status :: %s' % DEVSTATUS,
+        'Development Status :: 5 - Production/Stable',
         'Environment :: Console',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',

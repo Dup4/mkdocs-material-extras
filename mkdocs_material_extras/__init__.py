@@ -1,5 +1,4 @@
 """Mkdocs material Custom."""
-from .__meta__ import __version__, __version_info__  # noqa: F401
 import glob
 import os
 import mkdocs.plugins
