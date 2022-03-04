@@ -1,4 +1,4 @@
-# mkdocs-material-template
+# mkdocs-material-extras
 
 ## Install deps
 
