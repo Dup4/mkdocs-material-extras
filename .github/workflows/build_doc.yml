@@ -43,7 +43,7 @@ jobs:
         env:
           GOOGLE_ANALYTICS_KEY: G-QR41N1MXE9
         run: |
-          bash -e build.sh
+          bash -e build_doc.sh
 
       - name: Deploy to gh-pages
         if: ${{ github.event_name != 'pull_request' }}

@@ -5,6 +5,8 @@
 
 node_modules/
 
+mkdocs_material_extras/theme
+
 yarn-error.log
 
 manifest*.json
@@ -17,9 +19,9 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-build/
 develop-eggs/
-dist/
+/build
+/dist
 downloads/
 eggs/
 .eggs/
