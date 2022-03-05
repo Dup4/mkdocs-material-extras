@@ -1,12 +1,12 @@
-site_name: Mkdocs Material Template
-site_url: https://dup4.com/mkdocs-material-template/
+site_name: Mkdocs Material Extras
+site_url: https://dup4.com/mkdocs-material-extras/
 site_author: Dup4
 site_description: >-
-  Mkdocs Material Template
+  Mkdocs Material Extras
 
 # Repository
-repo_name: mkdocs-material-template
-repo_url: https://github.com/Dup4/mkdocs-material-template
+repo_name: mkdocs-material-extras
+repo_url: https://github.com/Dup4/mkdocs-material-extras
 edit_uri: tree/main/docs
 
 # Copyright
@@ -90,7 +90,7 @@ extra:
     property: !ENV GOOGLE_ANALYTICS_KEY
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/Dup4/mkdocs-material-template
+      link: https://github.com/Dup4/mkdocs-material-extras
 
 extra_css:
 
