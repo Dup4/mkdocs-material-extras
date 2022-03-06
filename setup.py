@@ -24,7 +24,7 @@ with open("README.md", encoding="utf-8") as f:
 
 
 setup(
-    name='mkdocs-material-extras',
+    name="mkdocs-material-extras",
     version=package["version"],
     url=package["homepage"],
     license=package["license"],
@@ -34,29 +34,29 @@ setup(
     author=package["author"]["name"],
     author_email=package["author"]["email"],
     keywords=package["keywords"],
-    python_requires='>=3.7',
+    python_requires=">=3.7",
     include_package_data=True,
     entry_points={
-        'mkdocs.plugins': [
-            'mkdocs_material_extras = mkdocs_material_extras:MkdocsMaterialExtras',
+        "mkdocs.plugins": [
+            "mkdocs-material-extras = mkdocs_material_extras:MkdocsMaterialExtras",
         ]
     },
-    packages=find_packages(exclude=['tools', 'docs', 'test*']),
+    packages=find_packages(exclude=["tools", "docs", "test*"]),
     install_requires=install_requires,
     classifiers=[
-        'Development Status :: 5 - Production/Stable',
-        'Environment :: Console',
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
-        'Programming Language :: Python :: 3.9',
-        'Programming Language :: Python :: 3.10',
-        'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
-        'Topic :: Software Development :: Libraries :: Python Modules',
-        'Topic :: Text Processing :: Filters',
-        'Topic :: Text Processing :: Markup :: HTML',
+        "Development Status :: 5 - Production/Stable",
+        "Environment :: Console",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Topic :: Text Processing :: Filters",
+        "Topic :: Text Processing :: Markup :: HTML",
     ]
 )

@@ -20,23 +20,23 @@
  * IN THE SOFTWARE.
  */
 
-import * as chokidar from "chokidar"
-import * as fs from "fs/promises"
+import * as chokidar from "chokidar";
+import * as fs from "fs/promises";
 import {
-  EMPTY,
-  Observable,
-  from,
-  fromEvent,
-  identity,
-  catchError,
-  defer,
-  mapTo,
-  mergeWith,
-  of,
-  switchMap,
-  tap
-} from "rxjs"
-import glob from "tiny-glob"
+    EMPTY,
+    Observable,
+    from,
+    fromEvent,
+    identity,
+    catchError,
+    defer,
+    mapTo,
+    mergeWith,
+    of,
+    switchMap,
+    tap,
+} from "rxjs";
+import glob from "tiny-glob";
 
 /* ----------------------------------------------------------------------------
  * Helper types
@@ -46,15 +46,15 @@ import glob from "tiny-glob"
  * Resolve options
  */
 interface ResolveOptions {
-  cwd: string                          /* Working directory */
-  watch?: boolean                      /* Watch mode */
+    cwd: string /* Working directory */;
+    watch?: boolean /* Watch mode */;
 }
 
 /**
  * Watch options
  */
 interface WatchOptions {
-  cwd: string                          /* Working directory */
+    cwd: string /* Working directory */;
 }
 
 /* ----------------------------------------------------------------------------
@@ -64,12 +64,12 @@ interface WatchOptions {
 /**
  * Base directory for compiled files
  */
-export const base = "material"
+export const base = "mkdocs_material_extras/theme";
 
 /**
  * Cache to omit redundant writes
  */
-export const cache = new Map<string, string>()
+export const cache = new Map<string, string>();
 
 /* ----------------------------------------------------------------------------
  * Helper Ffunctions
@@ -81,13 +81,12 @@ export const cache = new Map<string, string>()
  * @returns Time
  */
 function now() {
-  const date = new Date()
-  return [
-    `${date.getHours()}`.padStart(2, "0"),
-    `${date.getMinutes()}`.padStart(2, "0"),
-    `${date.getSeconds()}`.padStart(2, "0")
-  ]
-    .join(":")
+    const date = new Date();
+    return [
+        `${date.getHours()}`.padStart(2, "0"),
+        `${date.getMinutes()}`.padStart(2, "0"),
+        `${date.getSeconds()}`.padStart(2, "0"),
+    ].join(":");
 }
 
 /* ----------------------------------------------------------------------------
@@ -103,16 +102,14 @@ function now() {
  * @returns File observable
  */
 export function resolve(
-  pattern: string, options?: ResolveOptions
+    pattern: string,
+    options?: ResolveOptions
 ): Observable<string> {
-  return from(glob(pattern, options))
-    .pipe(
-      catchError(() => EMPTY),
-      switchMap(files => from(files)),
-      options?.watch
-        ? mergeWith(watch(pattern, options))
-        : identity
-    )
+    return from(glob(pattern, options)).pipe(
+        catchError(() => EMPTY),
+        switchMap((files) => from(files)),
+        options?.watch ? mergeWith(watch(pattern, options)) : identity
+    );
 }
 
 /**
@@ -124,12 +121,13 @@ export function resolve(
  * @returns File observable
  */
 export function watch(
-  pattern: string, options: WatchOptions
+    pattern: string,
+    options: WatchOptions
 ): Observable<string> {
-  return fromEvent(
-    chokidar.watch(pattern, options),
-    "change"
-  ) as Observable<string>
+    return fromEvent(
+        chokidar.watch(pattern, options),
+        "change"
+    ) as Observable<string>;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -142,10 +140,9 @@ export function watch(
  * @returns Directory observable
  */
 export function mkdir(directory: string): Observable<string> {
-  return defer(() => fs.mkdir(directory, { recursive: true }))
-    .pipe(
-      mapTo(directory)
-    )
+    return defer(() => fs.mkdir(directory, { recursive: true })).pipe(
+        mapTo(directory)
+    );
 }
 
 /**
@@ -156,9 +153,8 @@ export function mkdir(directory: string): Observable<string> {
  * @returns File data observable
  */
 export function read(file: string): Observable<string> {
-  return defer(() => fs.readFile(file, "utf8"))
+    return defer(() => fs.readFile(file, "utf8"));
 }
-
 
 /**
  * Write a file, but only if the contents changed
@@ -169,17 +165,16 @@ export function read(file: string): Observable<string> {
  * @returns File observable
  */
 export function write(file: string, data: string): Observable<string> {
-  let contents = cache.get(file)
-  if (contents === data) {
-    return of(file)
-  } else {
-    cache.set(file, data)
-    return defer(() => fs.writeFile(file, data))
-      .pipe(
-        mapTo(file),
-        process.argv.includes("--verbose")
-          ? tap(file => console.log(`${now()} + ${file}`))
-          : identity
-      )
-  }
+    let contents = cache.get(file);
+    if (contents === data) {
+        return of(file);
+    } else {
+        cache.set(file, data);
+        return defer(() => fs.writeFile(file, data)).pipe(
+            mapTo(file),
+            process.argv.includes("--verbose")
+                ? tap((file) => console.log(`${now()} + ${file}`))
+                : identity
+        );
+    }
 }

@@ -28,4 +28,4 @@ jobs:
 
       - name: Lint
         run: |
-          yarn check
+          yarn check:md

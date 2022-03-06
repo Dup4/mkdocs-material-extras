@@ -231,8 +231,7 @@
         "@typescript-eslint/prefer-for-of": "off",
         "@typescript-eslint/prefer-function-type": "error",
         "@typescript-eslint/semi": [
-            "error",
-            "never"
+            "error"
         ],
         "@typescript-eslint/triple-slash-reference": "off",
         "@typescript-eslint/type-annotation-spacing": "error",

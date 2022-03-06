@@ -15,7 +15,6 @@ copyright: Copyright &copy; 2022 - Present <a href="https://github.com/Dup4" tar
 # Configuration
 theme:
   name: material
-  custom_dir: theme
 
   # Static files
   static_templates:
@@ -81,6 +80,8 @@ plugins:
   - redirects:
       redirect_maps:
         "index.md": "tutorial/abbreviations.md"
+  - mkdocs-material-extras:
+      enable_mathjax: !ENV [ENABLE_MATHJAX, true]
 
 # Customization
 extra:
@@ -91,13 +92,6 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Dup4/mkdocs-material-extras
-
-extra_css:
-
-extra_javascript:
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - assets/mathjax.js
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js
 
 # Extensions
 markdown_extensions:

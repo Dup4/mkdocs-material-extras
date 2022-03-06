@@ -38,11 +38,14 @@ jobs:
       - name: Install Node dependencies
         run: |
           yarn
+          yarn build
 
       - name: Build
         env:
           GOOGLE_ANALYTICS_KEY: G-QR41N1MXE9
+          ENABLE_MATHJAX: false
         run: |
+          bash -e build_plugin.sh
           bash -e build_doc.sh
 
       - name: Deploy to gh-pages
