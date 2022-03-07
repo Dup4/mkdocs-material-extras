@@ -5,6 +5,25 @@
 @import "utilities/convert";
 @import "utilities/color_tools";
 
+@import "config";
+
+@import "palette/colors";
+
+@import "general";
+
+@import "extensions/admonition";
+@import "extensions/arithmatex";
+@import "extensions/critic";
+@import "extensions/details";
+@import "extensions/highlight";
+@import "extensions/keys";
+@import "extensions/magiclink";
+@import "extensions/mark";
 @import "extensions/progressbar";
+@import "extensions/tabbed";
 @import "extensions/tables";
+@import "extensions/tasklist";
 @import "extensions/toc";
+@import "extensions/mermaid";
+
+@import "material";

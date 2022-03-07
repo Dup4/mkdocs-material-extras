@@ -159,7 +159,9 @@ $break-devices: () !default;
 ///
 @mixin break-at-device($device) {
   @if type-of($device) == string {
-    $device: $device;
+    $device-list: ();
+    $device-list: append($device-list, $device);
+    $device: $device-list;
   }
   @if type-of($device) == list {
     $breakpoint: break-select-device($device);
@@ -182,7 +184,9 @@ $break-devices: () !default;
 ///
 @mixin break-from-device($device) {
   @if type-of($device) == string {
-    $device: $device;
+    $device-list: ();
+    $device-list: append($device-list, $device);
+    $device: $device-list;
   }
   @if type-of($device) == list {
     $breakpoint: break-select-device($device);
@@ -200,7 +204,9 @@ $break-devices: () !default;
 ///
 @mixin break-to-device($device) {
   @if type-of($device) == string {
-    $device: $device;
+    $device-list: ();
+    $device-list: append($device-list, $device);
+    $device: $device-list;
   }
   @if type-of($device) == list {
     $breakpoint: break-select-device($device);

@@ -1,6 +1,6 @@
 {
     "name": "mkdocs-material-extras",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "mkdocs material extras",
     "directories": {
         "doc": "docs"
