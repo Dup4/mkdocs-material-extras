@@ -16,5 +16,5 @@ indent_size = 2
 [*.md]
 trim_trailing_whitespace = false
 
-[*.js]
+[*.{js,scss}]
 indent_size = 2

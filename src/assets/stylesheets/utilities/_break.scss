@@ -94,7 +94,9 @@ $break-devices: () !default;
     }
   }
   @if type-of($current) == list or type-of($current) == number {
-    $current: (default: $current);
+    $current: (
+      default: $current,
+    );
   }
   @return break-select-min-max($current);
 }
@@ -157,7 +159,7 @@ $break-devices: () !default;
 ///
 @mixin break-at-device($device) {
   @if type-of($device) == string {
-    $device: $device,;
+    $device: $device;
   }
   @if type-of($device) == list {
     $breakpoint: break-select-device($device);
@@ -180,7 +182,7 @@ $break-devices: () !default;
 ///
 @mixin break-from-device($device) {
   @if type-of($device) == string {
-    $device: $device,;
+    $device: $device;
   }
   @if type-of($device) == list {
     $breakpoint: break-select-device($device);
@@ -198,7 +200,7 @@ $break-devices: () !default;
 ///
 @mixin break-to-device($device) {
   @if type-of($device) == string {
-    $device: $device,;
+    $device: $device;
   }
   @if type-of($device) == list {
     $breakpoint: break-select-device($device);
