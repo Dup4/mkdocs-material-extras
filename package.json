@@ -1,6 +1,6 @@
 {
     "name": "mkdocs-material-extras",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "mkdocs material extras",
     "directories": {
         "doc": "docs"
@@ -71,6 +71,7 @@
         "@typescript-eslint/parser": "^5.13.0",
         "autoprefixer": "^10.4.2",
         "chokidar": "^3.5.3",
+        "css-mqpacker": "^7.0.0",
         "cssnano": "^5.1.0",
         "esbuild": "^0.14.24",
         "eslint": "^8.10.0",
@@ -91,6 +92,7 @@
         "postcss-dir-pseudo-class": "^6.0.4",
         "postcss-inline-svg": "^5.0.0",
         "postcss-logical": "^5.0.4",
+        "postcss-svgo": "^5.1.0",
         "preact": "^10.6.6",
         "remark-clang-format": "^1.9.3",
         "remark-cli": "^10.0.1",
@@ -109,7 +111,6 @@
         "stylelint-config-recommended": "^7.0.0",
         "stylelint-config-standard-scss": "^3.0.0",
         "stylelint-scss": "^4.1.0",
-        "svgo": "2.3.1",
         "tiny-glob": "^0.2.9",
         "ts-node": "^10.6.0",
         "typescript": "^4.6.2"

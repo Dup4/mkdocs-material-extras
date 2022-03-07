@@ -39,7 +39,7 @@ import {
 } from "rxjs";
 import { compile } from "sass";
 
-import { base, mkdir, write } from "../_";
+import { mkdir, write } from "../_";
 
 /* ----------------------------------------------------------------------------
  * Helper types
@@ -91,7 +91,7 @@ function digest(file: string, data: string): string {
 function plugin(): Plugin {
     const rules = new Set<Rule>();
     return {
-        postcssPlugin: "mkdocs-material",
+        postcssPlugin: "mkdocs-material-extras",
         Root(root) {
             /* Fallback for :is() */
             root.walkRules(/:is\(/, (rule) => {
@@ -110,6 +110,7 @@ function plugin(): Plugin {
         },
     };
 }
+
 plugin.postcss = true;
 
 /* ----------------------------------------------------------------------------
@@ -127,21 +128,42 @@ export function transformStyle(options: TransformOptions): Observable<string> {
     return defer(() =>
         of(
             compile(options.from, {
-                loadPaths: ["src/assets/stylesheets"],
+                loadPaths: [
+                    "node_modules/material-design-color",
+                    "node_modules/material-shadows",
+                    "src/assets/stylesheets",
+                ],
                 sourceMap: true,
             })
         )
     ).pipe(
         switchMap(({ css, sourceMap }) =>
             postcss([
-                require("autoprefixer"),
                 require("postcss-logical"),
                 require("postcss-dir-pseudo-class"),
-                plugin,
                 require("postcss-inline-svg")({
-                    paths: [`${base}/.icons`],
+                    paths: ["node_modules"],
                     encode: false,
                 }),
+                require("postcss-svgo")({
+                    plugins: [
+                        {
+                            name: "preset-default",
+                            params: {
+                                overrides: {
+                                    removeViewBox: {
+                                        active: false,
+                                    },
+                                },
+                            },
+                        },
+                        "removeDimensions",
+                    ],
+                    encode: false,
+                }),
+                require("css-mqpacker")(),
+                require("autoprefixer"),
+                plugin,
                 ...(process.argv.includes("--optimize")
                     ? [require("cssnano")]
                     : []),

@@ -63,7 +63,7 @@ function ext(file: string, extension: string): string {
 
 /* Copy all assets */
 const assets$ = concat(
-    /* Copy images and configurations */
+    /* Copy mathjax init script */
     ...["assets/javascripts/mathjax.js"].map((pattern) =>
         copyAll(pattern, {
             from: "src",

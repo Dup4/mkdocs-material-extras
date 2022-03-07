@@ -107,7 +107,7 @@ markdown_extensions:
   - markdown.extensions.tables:
   - markdown.extensions.toc:
       slugify: !!python/name:pymdownx.slugs.uslugify
-      permalink: true
+      permalink: ""
       toc_depth: 2-3
   - pymdownx.arithmatex:
   - pymdownx.betterem:
