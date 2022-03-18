@@ -8,7 +8,7 @@
     "scripts": {
         "build": "rimraf mkdocs_material_extras/theme && ts-node -T tools/build --optimize",
         "build:dirty": "ts-node -T tools/build --dirty",
-        "build:doc": "bash build.sh",
+        "build:doc": "bash build_doc.sh",
         "clean": "rimraf mkdocs_material_extras/theme",
         "check": "run-p check:*",
         "check:build": "tsc --noEmit",
