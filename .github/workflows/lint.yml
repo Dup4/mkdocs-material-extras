@@ -30,7 +30,3 @@ jobs:
       - name: Install Node dependencies
         run: |
           pnpm i
-
-      - name: Lint
-        run: |
-          pnpm check:style
