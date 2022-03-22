@@ -48,6 +48,7 @@ specifiers:
   postcss-svgo: ^5.1.0
   preact: ^10.6.6
   remark-cli: ^10.0.1
+  remark-lint-code-block-style: ^3.1.0
   remark-preset-lint-mkdocs-material: ^0.6.0
   resize-observer-polyfill: ^1.5.1
   rimraf: ^3.0.2
@@ -118,6 +119,7 @@ devDependencies:
   postcss-svgo: 5.1.0_postcss@8.4.12
   preact: 10.6.6
   remark-cli: 10.0.1
+  remark-lint-code-block-style: 3.1.0
   remark-preset-lint-mkdocs-material: 0.6.0
   rimraf: 3.0.2
   sass: 1.49.9

@@ -2,7 +2,7 @@
     "editor.formatOnSave": true,
     "editor.formatOnPaste": false,
     "files.associations": {
-        ".remarkc": "json"
+        ".remarkrc": "json"
     },
     "cSpell.words": [
         "arithmatex",
