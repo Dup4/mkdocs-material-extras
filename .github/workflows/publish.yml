@@ -3,7 +3,7 @@ name: publish
 on:
   push:
     tags:
-    - '*'
+      - "*"
 
 jobs:
   publish-pypi:
@@ -15,22 +15,28 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-python@v1
+
+      - uses: actions/setup-python@v3
         with:
           python-version: 3.9
+
+      - uses: pnpm/action-setup@v2
+        with:
+          version: latest
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
           node-version: 16
+          cache: pnpm
 
       - name: Install Node dependencies
         run: |
-          yarn
+          pnpm
 
       - name: Build Theme
         run: |
-          yarn build
+          pnpm build
 
       - name: Package
         run: |
