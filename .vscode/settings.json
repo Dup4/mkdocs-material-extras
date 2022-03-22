@@ -1,6 +1,9 @@
 {
     "editor.formatOnSave": true,
     "editor.formatOnPaste": false,
+    "files.associations": {
+        ".remarkc": "json"
+    },
     "cSpell.words": [
         "arithmatex",
         "autohide",

@@ -16,7 +16,7 @@
         "check:style": "run-p check:style:*",
         "check:style:scss": "stylelint \"src/**/*.scss\"",
         "check:style:ts": "eslint \"src/**/*.{js,ts}\"",
-        "format:md": "remark . --quiet --frail --output",
+        "format:md": "remark ./docs/**/*.md --quiet --frail --output",
         "start": "ts-node -T tools/build --verbose --dirty --watch",
         "upgrade": "run-s upgrade:*",
         "upgrade:bump": "ncu --upgrade --filterVersion \"/^\\^/\"",
