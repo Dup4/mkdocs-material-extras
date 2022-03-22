@@ -94,6 +94,8 @@
         "postcss-logical": "^5.0.4",
         "postcss-svgo": "^5.1.0",
         "preact": "^10.6.6",
+        "remark-cli": "^10.0.1",
+        "remark-preset-lint-mkdocs-material": "^0.6.0",
         "rimraf": "^3.0.2",
         "sass": "^1.49.9",
         "stylelint": "^14.5.3",

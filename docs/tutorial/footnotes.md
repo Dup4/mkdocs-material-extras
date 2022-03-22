@@ -78,8 +78,7 @@ Paragraphs can be written on the next line and must be indented by four spaces:
 
 </div>
 
-[^2]:
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+[^2]: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus
     auctor massa, nec semper lorem quam in massa.
 

@@ -55,7 +55,7 @@ theme:
     - content.code.annotate # (1)
 ```
 
-1.  :man_raising_hand: I'm a code annotation! I can contain `code`, **formatted
+1. :man_raising_hand: I'm a code annotation! I can contain `code`, **formatted
     text**, images, ... basically anything that can be written in Markdown.
 
 </div>
@@ -154,8 +154,7 @@ last 4 years
 
 </div>
 
-[^1]:
-    Code annotations require syntax highlighting with [Pygments] – they're
+[^1]: Code annotations require syntax highlighting with [Pygments] – they're
     currently not compatible with JavaScript syntax highlighters, or languages
     that do not have comments in their grammar. However, we're actively working
     on supporting alternate ways of defining code annotations, allowing to

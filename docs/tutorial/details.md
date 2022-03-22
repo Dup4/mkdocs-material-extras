@@ -18,7 +18,6 @@ content of the block then follows on the next line, indented by four spaces.
 *Result*:
 
 !!! note
-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
@@ -41,7 +40,6 @@ links, formatting, ...) after the type qualifier.
 *Result*:
 
 !!! note "Phasellus posuere in sem ut cursus"
-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
@@ -314,8 +312,7 @@ the default type, and thus fallback for unknown type qualifiers, is `note`:
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-[^1]: 
-    The `seealso` qualifier was originally adapted from the `readthedocs` theme,
+[^1]: The `seealso` qualifier was originally adapted from the `readthedocs` theme,
     in order to make it easier for authors to migrate to Material for MkDocs.
     However, when the title is omitted, the admonition extension will render it
     as `Seealso`, which is incorrect English. For this reason, it was deprecated
