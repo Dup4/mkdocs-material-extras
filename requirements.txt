@@ -1,4 +1,4 @@
-mkdocs-material >= 8.2.4
+mkdocs-material >= 8.2.7
 
 mkdocs-minify-plugin >= 0.5
 mkdocs-macros-plugin >= 0.6
