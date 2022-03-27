@@ -32,7 +32,7 @@ jobs:
 
       - name: Install Node dependencies
         run: |
-          pnpm
+          pnpm i
 
       - name: Build Theme
         run: |
