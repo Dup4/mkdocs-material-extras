@@ -46,7 +46,7 @@ function getMathJax() {
 /**
  *
  * @param {string} content
- * @returns {Promsise<string>}
+ * @returns {Promise<string>}
  */
 async function RenderMathJax(content) {
   const jsdom = require("jsdom");
