@@ -42,7 +42,6 @@ jobs:
       - name: Install Node dependencies
         run: |
           pnpm i
-          cd -
 
       - name: Build Theme
         run: |
