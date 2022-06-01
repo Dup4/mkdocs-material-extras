@@ -42,8 +42,6 @@ jobs:
       - name: Install Node dependencies
         run: |
           pnpm i
-          cd plugins/mkdocs-render-math-ssr
-          pnpm i
           cd -
 
       - name: Build Theme
