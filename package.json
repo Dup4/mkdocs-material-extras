@@ -21,7 +21,8 @@
         "start": "ts-node -T tools/build --verbose --dirty --watch",
         "upgrade": "run-s upgrade:*",
         "upgrade:bump": "ncu --upgrade --filterVersion \"/^\\^/\"",
-        "upgrade:install": "npm install"
+        "upgrade:install": "npm install",
+        "release": "bumpp --commit --push --tag"
     },
     "repository": {
         "type": "git",
@@ -71,6 +72,7 @@
         "@typescript-eslint/eslint-plugin": "^5.13.0",
         "@typescript-eslint/parser": "^5.13.0",
         "autoprefixer": "^10.4.2",
+        "bumpp": "^7.1.1",
         "chokidar": "^3.5.3",
         "css-mqpacker": "^7.0.0",
         "cssnano": "^5.1.0",
