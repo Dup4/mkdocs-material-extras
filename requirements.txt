@@ -6,4 +6,4 @@ mkdocs-redirects >= 1.0
 mkdocs-rss-plugin >= 0.21
 mkdocs-git-revision-date-localized-plugin >= 1.0.0
 
-pymdown-extensions==9.11
+pymdown-extensions==10.0
